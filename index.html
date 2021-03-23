@@ -32,16 +32,16 @@
 
         <main>
             <nav>
-                <a>Coats</a>
-                <a>Dresses</a>
-                <a>Jerseys</a>
-                <a>Pants</a>
+                <a href="#">Coats</a>
+                <a href="#">Dresses</a>
+                <a href="#">Jerseys</a>
+                <a href="#">Pants</a>
             </nav>
 
             <div class="products-wrapper"></div>
 
             <section>
-                <div>Categories</div>
+                <div class="bold-text">Categories</div>
 
                 <div class="categories-wrapper">
                     <div>Women</div>
@@ -51,10 +51,53 @@
                 </div>
             </section>
 
-            <div class="overlay">
+            <div class="overlay hidden">
                 <div class="close-modal"><img src="assets/close.png"></div>
                 <div class="overlay-content-wrapper">
-                   <div class="product-img-wrapper"></div>
+                   <div class="modal">  <!--as vrea sa incarc datele avand deja elementele construite in html-->
+                        <div class="product-img-wrapper"></div>
+                        <div class="product-details-wrapper">
+                            <div class="product-details">
+                                <div class="name"></div>
+                                <div class="price"></div>
+                            </div>
+
+                            <div class="size-wrapper">
+                                <div>Your size</div>
+                                <div class="sizes">
+                                    <div>S</div>
+                                    <div>M</div>
+                                    <div>L</div>
+                                    <div>XL</div>
+                                </div>
+                            </div>
+
+                            <div class="product-buttons-wrapper">
+                                <button>Details</button>
+                                <button>Order</button>
+                                <button>Payment</button>
+                            </div>
+
+                            <div class="other-details-wrapper">
+                                <div class="product-composition">
+                                    <div class="first-col">
+                                        <div>Composition</div>
+                                        <div></div>
+                                    </div>
+                                
+                                    <div class="second-col">
+                                        <div>Country</div>
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="product-care">
+                                    <div>Care</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
